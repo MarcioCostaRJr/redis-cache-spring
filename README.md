@@ -2,14 +2,18 @@
 
 Projeto com o intuito em demonstrar utilização do Redis como cache de para apoiar processo de alto volume de informações
 junto ao SpringBoot.
+
 ---
+
 Project to demonstrate the use of Redis as a cache to support high volume information processing next to SpringBoot
 
 ## Sobre o projeto / About the project
 
 O projeto foi concebido para tomar como base a geração de cache proveniente consulta a uma base dados que será 
 gerenciada pelo Redis. Algumas abordagens da ferramenta será abordada para demonstrar conceitos bases do cache.
+
 ---
+
 The project was conceived to be based on the generation of cache coming from a query to a database that will be
 managed by Redis. Some approaches of the tool will be addressed to demonstrate basic concepts of the cache.
 
@@ -94,6 +98,8 @@ Segue:
 - **Controller** - Interceptadores de requisição HTTP
 - **Config** - Componentes de configurações da aplicação
 
+---
+
 The concept used was **Layer Responsibility**. In this way, the implementation will be based on its technical purpose.
 He follows:
 
@@ -109,6 +115,8 @@ He follows:
 
 Para este projeto, os testes integrados via Postman disponibilizados através de um arquivo que contém requisições, 
 conteúdo e outros. Os testes estão disponíveis em uma pasta chamada collections_integrated_tests no projeto.
-<br /> <br />
+
+---
+
 For this project, the integrated tests via Postman made available through a file that contains requests,
 content and others. Tests are available in a folder called collections_integrated_tests in the project.
