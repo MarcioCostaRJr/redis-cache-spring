@@ -45,8 +45,13 @@ public class CatalogoController {
     }
 
     @DeleteMapping
-    public void removerCatalogo(@PathVariable final Long id) {
-        service.removerPorId(id);
+    public ResponseEntity<Object> removerCatalogo(@PathVariable final Long id) {
+        try {
+            service.removerPorId(id);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+            return ResponseEntity.noContent().build();
+        }
     }
 
     @GetMapping("/lote")
