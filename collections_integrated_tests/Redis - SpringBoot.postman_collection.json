@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "192bb1b5-c575-40af-b72c-70472d569d59",
+		"name": "Redis - SpringBoot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17740620"
+	},
+	"item": [
+		{
+			"name": "Criar Catalogo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Top Gun - Monomotor\",\r\n    \"descricaoCatalogo\": \"Versão de Top Gun regional\",\r\n    \"dataLancamento\": \"2022-01-12\",\r\n    \"duracao\": 120,\r\n    \"genero\": \"Todos\",\r\n    \"ativo\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/catalogo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"catalogo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Catalogo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/catalogo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"catalogo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Procurar Catalogo Por Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/catalogo/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"catalogo",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remover Catalogo Por Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/catalogo/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"catalogo",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Catalogo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1100009,\r\n    \"titulo\": \"Top Gun - Monomotor\",\r\n    \"descricaoCatalogo\": \"Versão de Top Gun em PE\",\r\n    \"dataLancamento\": \"2022-01-12\",\r\n    \"duracao\": 120,\r\n    \"genero\": \"Todos\",\r\n    \"ativo\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/catalogo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"catalogo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
